@@ -29,3 +29,60 @@ mcp_server_debug.log
 # ---- Local development files -------------------------------------------
 /.credentials
 /.claude
+
+# ---- Python artefacts --------------------------------------------------
+__pycache__/
+*.py[cod]
+*.so
+.mcp.json
+claude.md
+
+# ---- Packaging ---------------------------------------------------------
+*.egg-info/
+build/
+dist/
+
+# ---- Environments & tooling -------------------------------------------
+.env
+.env.*
+.venv/
+venv/
+.idea/
+.vscode/
+
+# ---- macOS clutter -----------------------------------------------------
+.DS_Store
+
+# ---- Google Workspace / Service Accounts -------------------------------
+client_secret.json
+service_account.json
+service-account.json
+google-credentials.json
+.credentials/
+token.json
+
+# ---- Authentik / OIDC --------------------------------------------------
+authentik.env
+authentik_secrets.env
+oidc.env
+jwks.json
+openid-configuration.json
+
+# ---- JWT / OAuth tokens ------------------------------------------------
+*.jwt
+*.token
+access_token*
+refresh_token*
+
+# ---- Docker ------------------------------------------------------------
+docker-data/
+pgdata/
+redis-data/
+
+# ---- Logs --------------------------------------------------------------
+mcp_server_debug.log
+*.log
+
+# ---- Local development files -------------------------------------------
+/.credentials
+/.claude
