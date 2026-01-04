@@ -49,6 +49,7 @@ def _adjust_due_max_for_tasks_api(due_max: str) -> str:
     The API stores due dates at day resolution and compares using < dueMax, so to
     include tasks due on the requested date we bump the bound by one day.
     """
+    
     try:
         parsed = datetime.fromisoformat(due_max.replace("Z", "+00:00"))
     except ValueError:
